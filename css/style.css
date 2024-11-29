@@ -1,0 +1,829 @@
+:root {
+    --main-pink-color: rgb(237, 9, 139);
+    --main-yellow-color: #FBCE2D;
+    --main-purple-color: #423F8D;
+    --main-h-font: "Fredoka", sans-serif;
+    --p-font: "DM Sans", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width/height */
+}
+
+/* Header Styling */
+.header {
+    font-family: var(--p-font);
+    background-color: var(--main-pink-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 15px 5%;
+    color: #fff;
+}
+
+.header i {
+    margin: 0 5px 0 25px;
+}
+
+.header .right i {
+    font-size: 18px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.header .right i:hover {
+    transform: rotateY(180deg);
+}
+
+
+nav .container-fluid {
+    background-color: #fff;
+    padding: 10px 5%;
+    font-family: var(--main-h-font);
+    font-variation-settings: "wdth" 75;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-collapse li {
+    margin-left: 20px;
+}
+
+nav .nav-item a{
+    color: var(--main-purple-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+.navbar-nav .nav-link.active , .nav-link:hover  {
+    color:var(--main-pink-color);
+}
+/*-----------------------------------*/
+.home{
+    background-image: url(../images/h1_hero.png);
+    height: 100vh;
+    background-size:cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    font-family: var(--main-h-font);
+    display: flex;
+    justify-content: flex-start;
+    padding: 200px;
+    align-items: center;
+}
+.home .content{
+    background-color: #fff;
+    width: fit-content;
+    padding: 80px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.home h2{
+    color: var(--main-purple-color);
+    font-size: 100px;
+    font-weight: 700;
+}
+.home h3{
+    color: var(--main-yellow-color);
+    font-weight: 600;
+    font-size: 50px;
+}
+.explore{
+    padding: 15px 50px;
+    border-radius: 50px;
+    font-size: 18px;
+    background-color:var(--main-pink-color);
+    color: #fff;
+    width: fit-content;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+.explore:hover{
+    background-color: var(--main-purple-color);
+}
+.welcome .title{
+    text-align: center;
+    padding-top: 100px;
+    padding-inline: 300px;
+}
+.welcome h2{
+    font-family: var(--main-h-font);
+    color: var(--main-purple-color);
+    font-size: 50px;
+    font-weight: 600;
+}
+.welcome span{
+    color: var(--main-pink-color);
+}
+.welcome .title p{
+    font-family: var(--p-font);
+    color: var(--main-purple-color);
+    font-size: 20px;
+    margin: 20px 0 80px 0;
+}
+.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 20px;
+    font-family: var(--p-font);
+    margin-bottom: 100px;
+}
+.main-content .left .left-paragraph{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin:0  70px 50px 0;
+}
+.main-content .left i{
+    font-size: 38px;
+    color: #fff;
+    padding: 25px;
+    border-radius: 50%;
+}
+.main-content .left i.one{
+    background-color: #2097D4;
+}
+.main-content .left i.two{
+    background-color: #FBCE2D;
+}
+.main-content .left i.three{
+    background-color:#13D9DF;
+}
+.main-content h4{
+    font-weight: 700;
+    font-size: 26px;
+}
+.main-content h4.one{
+    color: #2097D4;
+}
+.main-content h4.two{
+    color:#FBCE2D;
+}
+.main-content h4.three{
+    color:#13D9DF;
+}
+.main-content p{
+    color:var(--main-purple-color);
+}
+/*-----------------------------*/
+.classes{
+    background-image: url(../images/section_bg1.png);
+    background-size: cover;
+    height: auto;
+    padding-bottom: 100px;
+}
+.classes .title{
+    text-align: center;
+    color: var(--main-purple-color);
+    padding-top: 100px;
+}
+.classes h2{
+    font-family: var(--main-h-font);
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.classes .title p{
+    font-family: var(--p-font);
+    font-size: 20px;
+    padding-inline: 300px;
+}
+/*----------------------------*/
+.badges{
+    margin-top: 60px;
+    padding-inline: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-family: var(--p-font);
+    margin-bottom: 50px;
+}
+.badges .col{
+    text-align: center;
+    background-color: #fff;
+    border-radius: 40px;
+    position: relative;
+}
+.badges img{
+    width: 100%;
+}
+.badges .col h4 , .badges .col p , .badges .badge-bottom{
+    padding-inline: 20px;
+}
+.badges .col h4{
+    font-family: var(--main-h-font);
+    padding-top: 15px;
+    color: var(--main-purple-color);
+    font-weight: 600;
+    font-size: 28px;
+    transition: 0.4s;
+}
+.badges .col h4:hover{
+    color: #ff5757;
+    cursor: pointer;
+}
+.badges .col span{
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    background-color:#FF377B;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.badges .col p{
+    color: #787878;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.badges .badge-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.badges .badge-bottom h6{
+    font-size: 20px;
+    font-weight: 600;
+}
+.badges .badge-bottom p{
+    font-size: 16px;
+}
+.badges .badge-bottom h6.one{
+    color: var(--main-pink-color);
+}
+.badges .badge-bottom h6.two{
+    color: var(--main-yellow-color);
+}
+.badges .badge-bottom h6.three{
+    color: #2097D4;
+}
+.classes .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.classes .button button{
+    padding: 15px 50px;
+    border-radius: 50px;
+    border: 1px solid var(--main-pink-color);
+    font-size: 18px;
+    background-color:#FFF2F9;
+    color: var(--main-pink-color);
+    width: fit-content;
+    font-weight: 600;
+    transition: 0.4s;
+}
+.classes .button button:hover{
+    background-color:var(--main-pink-color);
+    color: #fff;
+}
+/*----------------------------*/
+.event{
+    background-image: url(../images/section_bg2.png);
+    height: 80vh;
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.badge{
+    border-radius: 40px;
+    background-color: #fff;
+    padding: 50px 20px;
+    width: 700px;
+}
+.badge span{
+    font-family: var(--main-h-font);
+    color:var(--main-pink-color);
+    font-size: 24px;
+}
+p.paragraph{
+    font-family: var(--main-p-font);
+    color:var(--main-purple-color);
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    white-space:normal; 
+    line-height: 1.4;
+}
+.badge h4{
+    font-family: var(--main-h-font);
+    color:var(--main-purple-color);
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.event button{
+    font-family: var(--main-h-font);
+    padding: 20px 50px;
+    border-radius: 50px;
+    font-size: 20px;
+    background-color:var(--main-pink-color);
+    color: #fff;
+    width: fit-content;
+    font-weight: 500;
+    transition: 0.4s;
+    margin-top: 15px;
+}
+.event button:hover{
+    background-color: var(--main-purple-color);
+}
+.time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    color: var(--main-purple-color);
+    font-family: var(--main-h-font);
+}
+.time h6{
+    font-size: 40px;
+    font-weight: 500;
+}
+.time p{
+    font-size: 18px;
+    font-weight: normal;
+}
+.time div{
+    background-color: #FFFAE6;
+    padding: 1px 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+/*---------------------------*/
+.teachers{
+    margin-bottom: 100px
+}
+.teachers .title{
+    text-align: center;
+    padding-inline: 300px;
+}
+.teachers .title h2{
+    font-family: var(--main-h-font);
+    color: var(--main-purple-color);
+    font-size: 50px;
+    font-weight: 600;
+}
+.teachers .title p{
+    font-family: var(--p-font);
+    color: var(--main-purple-color);
+    font-size: 20px;
+    margin: 20px 0 80px 0;
+}
+.teachers .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 100px;
+    gap: 50px;
+    text-align: center;
+    font-family: var(--main-p-font);
+}
+.teachers .content div{
+    width: 25%;
+    position: relative;
+}
+.teachers .content div img{
+    width: 100%;
+    transition: 0.5s;
+}
+.teachers .content .icons{
+    font-size: 22px;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    bottom:120px;
+    left: 100px;
+    display: none;
+    color: #fff;
+}
+.teachers .content div:hover .icons{
+    display: flex;
+    transition: 0.5s;
+    display: flex;
+}
+.teachers .content i:hover{
+    font-size: 40px;
+    transition: 0.5s;
+    color: var(--main-purple-color);
+}
+.teachers .content div:hover img{
+    filter:contrast(0.5)
+}
+.teachers h4{
+    margin-top: 15px;
+    font-size: 28px;
+    color: var(--main-purple-color);
+}
+.carousel{
+    background-color: #FFF2F9;
+    padding: 100px 300px;
+}
+.carousel p{
+    font-family: var(--main-h-font);
+    color: #423F8D;
+    font-size: 30px;
+}
+.carousel h6{
+    font-family: var(--main-h-font);
+    color: var(--main-pink-color);
+    font-size: 24px;
+}
+.carousel-inner img.d-block{
+    width: 4%;
+}
+.carousel-inner img.author{
+    width: 3%;
+}
+.imgs{
+    display: flex;
+    overflow: hidden;
+}
+.imgs img{
+    width: 25%;
+}
+footer{
+    background-color: #4255A4;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-inline: 10px;
+    font-size: 18px;
+    font-family: var(--main-p-font);
+    color: #fff;
+}
+footer span{
+    color: #13D9DF
+}
+.footer{
+    background-color: #4255A4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 80px 50px;
+    color: #fff;
+}
+.footer img{
+    margin-bottom: 20px;
+}
+.footer .icons{
+    display: flex;
+    font-size: 20px;
+    gap: 30px;
+    margin-top: 40px;
+}
+.footer .icons i{
+    background-color: rgb(132, 132, 132 , 0.2);
+    border-radius: 50%;
+    padding: 12px;
+    transition: 0.4s;
+}
+.footer .icons i:hover{
+    background-color:var(--main-pink-color);
+    cursor: pointer;
+}
+.footer .left{
+    width: 40%;
+}
+.footer .left p{
+    width: 100%;
+}
+.footer h4{
+    font-family: var(--main-h-font);
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.footer p{
+    font-size: 18px;
+    transition: 0.4s;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.footer p:not(.left):hover{
+    color: var(--main-yellow-color);
+    background-color: rgb(132, 132, 132 , 0.2) ;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        justify-content:center;
+        gap:10px;
+    }
+    .header i {
+        margin-left: 20px;
+    }
+    .navbar-collapse {
+        justify-content: center;
+    }
+    /*-----------------------------------*/
+    .home{
+        background-position: center center; 
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .home .content{
+        padding: 70px;
+    }
+    .home h2{
+        font-size: 60px;
+    }
+    .home h3{
+        font-size: 30px;
+    }
+    .explore{
+        font-size: 16px;
+    }
+    /*---------------------*/
+    .welcome .title , .teachers .title{
+        padding-top: 50px;
+        padding-inline: 30px;
+    }
+    .welcome h2 , .teachers .title h2{
+        font-size: 35px;
+    }
+    .welcome .title p ,.teachers .title p{
+        font-size: 16px;
+        margin: 10px 0 50px 0;
+    }
+    .main-content{
+        flex-direction: column;
+        text-align: center;
+        padding-inline: 30px;
+        margin-bottom: 50px;
+    }
+    .main-content .left .left-paragraph{
+        flex-direction: column;
+        gap: 10px;
+        margin:0  0 10px 0;
+    }
+    .main-content .left i{
+        font-size: 28px;
+        padding: 22px;
+    }
+    .main-content h4{
+        font-size: 24px;
+    }
+    .main-content .right img{
+        width: 100%;
+    }
+    /*----------------------------*/
+    .classes{
+        height: auto;
+        padding-bottom: 30px;
+        padding-top: 50px;
+    }
+    .classes .title{
+        padding-top: 80px;
+    }
+    .classes h2{
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    .classes .title p{
+        font-size: 18px;
+        padding-inline: 30px;
+    }
+    /*----------------------------*/
+    .badges{
+        margin-top: 40px;
+        padding-inline: 70px;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .badges .col h4 , .badges .col p , .badges .badge-bottom{
+        padding-inline:20px;
+    }
+    .badges .col h4{
+        font-size: 24px;
+    }
+    .badges .col p{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .badges .badge-bottom h6{
+        font-size: 18px;
+    }
+    .badges .badge-bottom p{
+        font-size: 14px;
+    }   
+    /*-----------------------*/
+    .event{
+        margin-bottom: 0px;
+    }
+    .badge{
+        padding: 40px 20px;
+        width: 400px;
+    }
+    .badge span{
+        font-size: 20px;
+    }
+    p.paragraph{
+        font-size: 16px;
+        margin-top: 15px;
+    }
+    .badge h4{
+        font-size: 40px;
+        margin-top: 20px;
+    }
+    .event button{
+        padding: 20px 40px;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .time{
+        gap: 20px;
+    }
+    .time h6{
+        font-size: 30px;
+    }
+    .time p{
+        font-size: 16px;
+    }
+    /*---------------------------*/
+.teachers{
+    margin-bottom: 100px
+}
+.teachers .title{
+    padding-inline: 50px;
+}
+.teachers .content{
+    flex-direction: column;
+    padding-inline: 50px;
+    gap: 15px;
+}
+.teachers .content div{
+    width: 100%;
+}
+.teachers .content div img{
+    width: 70%;
+}
+.teachers .content .icons{
+    font-size: 18px;
+    gap: 10px;
+    left: 100px;
+}
+.teachers .content i:hover{
+    font-size: 30px;
+}
+.carousel{
+    padding: 60px 100px;
+}
+.carousel p{
+    font-size: 20px;
+}
+.carousel h6{
+    font-size: 22px;
+}
+.carousel-inner img.author{
+    width: 10%;
+}
+footer{
+    font-size: 16px;
+}
+.footer{
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 50px 80px;
+    text-align: center;
+}
+.footer .icons{
+    justify-content: center;
+    font-size: 18px;
+    gap: 20px;
+}
+.footer .left{
+    width: 100%;
+}
+.footer h4{
+    font-size: 24px;
+}
+.footer p{
+    font-size: 16px;
+}
+}
+@media only screen and (max-width: 992px) {
+    .navbar-collapse {
+        justify-content: center;
+    }
+    .welcome .title , .teachers .title{
+        padding-top: 50px;
+        padding-inline: 30px;
+    }
+    .welcome h2 ,.teachers .title h2{
+        font-size: 35px;
+    }
+    .welcome .title p ,.teachers .title p{
+        font-size: 16px;
+        margin: 10px 0 50px 0;
+    }
+    .main-content{
+        flex-direction: column;
+        text-align: center;
+        padding-inline: 30px;
+    }
+    .main-content .left .left-paragraph{
+        flex-direction: column;
+        gap: 10px;
+        margin:0  0 10px 0;
+    }
+    .main-content .left i{
+        font-size: 28px;
+        padding: 22px;
+    }
+    .main-content h4{
+        font-size: 24px;
+    }
+    .classes{
+        height: auto;
+        padding-bottom: 30px;
+        padding-top: 50px;
+    }
+    .classes .title{
+        padding-top: 80px;
+    }
+    .classes h2{
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    .classes .title p{
+        font-size: 18px;
+        padding-inline: 30px;
+    }
+    /*----------------------------*/
+    .event{
+        margin-bottom: 0;
+    }
+    .badges{
+        margin-top: 40px;
+        padding-inline: 60px;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .badges .col h4 , .badges .col p , .badges .badge-bottom{
+        padding-inline:20px;
+    }
+    .badges .col h4{
+        font-size: 24px;
+    }
+    .badges .col p{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .badges .badge-bottom h6{
+        font-size: 18px;
+    }
+    .badges .badge-bottom p{
+        font-size: 14px;
+    }   
+    /*---------------------------*/
+    .teachers{
+        margin-bottom: 100px
+    }
+    .teachers .title{
+        padding-inline: 50px;
+    }
+    .teachers .content{
+        flex-direction: column;
+        padding-inline: 50px;
+        gap: 15px;
+    }
+    .teachers .content div{
+        width: 100%;
+    }
+    .teachers .content div img{
+        width: 70%;
+    }
+    .teachers .content .icons{
+        font-size: 20px;
+        gap: 22px;
+        left: 100px;
+    }
+    .teachers .content i:hover{
+        font-size: 30px;
+    }
+    .carousel{
+        padding: 100px 100px;
+    }
+}
+/*----------------------------------*/
